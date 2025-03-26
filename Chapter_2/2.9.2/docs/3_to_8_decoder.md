@@ -17,5 +17,6 @@
 ## Block Diagram
 
 The block diagram below works, observer carefully: 
+
 ![Block Diagram for 3-to-8 Decoder](3_to_8_decoder.drawio.png)
 
