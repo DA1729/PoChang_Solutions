@@ -1,6 +1,6 @@
-# Simplified Sum of Products Expression for Given Truth Table
+# Greater than Circuit for 2 bits inputs
 
-## Step 1: Given Truth Table
+## Step 1: Truth Table
 
 | a[1] | a[0] | b[1] | b[0] | y(out) |
 |------|------|------|------|--------|
@@ -56,3 +56,9 @@ p2 = a[0] & (~b[1]);
 p3 = a[1] & (~b[0]);
 p4 = a[1] & (~b[1]);
 y = p0 | p1 | p2 | p3 | p4;
+```
+---
+
+## Wave Input and Output
+
+![Wave Input and Output](wave_2bit.png)
