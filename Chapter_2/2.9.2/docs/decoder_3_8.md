@@ -20,3 +20,10 @@
 The block diagram below works, observer carefully: 
 
 ![Block Diagram for 3-to-8 Decoder](decoder_3_8.png)
+
+
+## Simulation Results
+
+Below are the simulation results (waveforms) from Modelsim: 
+
+![3-to-8 Decoder Simulation Results](decoder_3_8_wave.png)
