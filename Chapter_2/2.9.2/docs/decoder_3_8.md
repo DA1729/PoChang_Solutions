@@ -19,7 +19,7 @@
 
 The block diagram below works, observer carefully: 
 
-![Block Diagram for 3-to-8 Decoder](decoder_3_8.png)
+![Block Diagram for 3-to-8 Decoder](decoder_3_8_block.png)
 
 
 ## Simulation Results
