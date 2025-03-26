@@ -1,0 +1,54 @@
+# Simplified Sum of Products Expression for Given Truth Table
+
+## Step 1: Given Truth Table
+
+| a[1] | a[0] | b[1] | b[0] | y(out) |
+|------|------|------|------|--------|
+|  0   |  0   |  0   |  0   |   0    |
+|  0   |  1   |  0   |  0   |   1    |
+|  1   |  0   |  0   |  0   |   1    |
+|  1   |  1   |  0   |  0   |   1    |
+|  0   |  0   |  0   |  1   |   0    |
+|  0   |  1   |  0   |  1   |   0    |
+|  1   |  0   |  0   |  1   |   1    |
+|  1   |  1   |  0   |  1   |   1    |
+|  0   |  0   |  1   |  0   |   0    |
+|  0   |  1   |  1   |  0   |   0    |
+|  1   |  0   |  1   |  0   |   0    |
+|  1   |  1   |  1   |  0   |   1    |
+|  0   |  0   |  1   |  1   |   0    |
+|  0   |  1   |  1   |  1   |   0    |
+|  1   |  0   |  1   |  1   |   0    |
+|  1   |  1   |  1   |  1   |   0    |
+
+---
+
+## Step 2: Karnaugh Map Representation
+
+The values are placed in a **4×4 K-map**, where:
+
+- **Rows** represent `a[1] a[0]`
+- **Columns** represent `b[1] b[0]`
+
+| a[1] a[0] \ b[1] b[0] | 00  | 01  | 11  | 10  |
+|------------------------|-----|-----|-----|-----|
+| **00**                |  0  |  0  |  0  |  0  |
+| **01**                |  1  |  0  |  0  |  0  |
+| **10**                |  1  |  1  |  0  |  0  |
+| **11**                |  1  |  1  |  0  |  1  |
+
+---
+
+## Step 3: Grouping Terms
+
+- `p0` covers cases where `a[1]` is `1` and `b[1]` is `0`.
+- `p1` covers cases where `a[0]` is `1` and both `b[1]` and `b[0]` are `0`.
+- `p2` covers cases where both `a[1]` and `a[0]` are `1`, and `b[0]` is `0`.
+
+Thus, the final expression is:
+
+```verilog
+p0 = ~b[1] & a[1];
+p1 = a[0] & (~b[1]) & (~b[0]);
+p2 = a[1] & a[0] & (~b[0]);
+y = p0 | p1 | p2;
