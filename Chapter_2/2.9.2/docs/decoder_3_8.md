@@ -14,9 +14,9 @@
 | 1  |  1   |  1   |  0   | 01000000   |
 | 1  |  1   |  1   |  1   | 10000000   |
 
+
 ## Block Diagram
 
 The block diagram below works, observer carefully: 
 
-![Block Diagram for 3-to-8 Decoder](3_to_8_decoder.drawio.png)
-
+![Block Diagram for 3-to-8 Decoder](decoder_3_8.png)
