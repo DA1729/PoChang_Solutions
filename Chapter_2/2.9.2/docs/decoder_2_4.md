@@ -12,11 +12,17 @@
 
 ## Logic Expression 
 
-Let the output (bcode) be composed of four bits: y3, y2, y1, y0. Then, 
+Let the output (bcode) be composed of four bits: y(3), y(2), y(1), y(0). Then, 
 
 ```verilog 
-y0 = en & (~a(1)) & (~a(0));
-y1 = en & (~a(1)) & (~a(0));
-y2 = en & (a(1)) & (~a(0));
-y3 = en & (a(1)) & (a(0));
+y[0] = en & (~a[1]) & (~a[0]);
+y[1] = en & (~a[1]) & (a[0]);
+y[2] = en & (a[1]) & (~a[0]);
+y[3] = en & (a[1]) & (a[0]);
+```
 
+## Simulation Results
+
+Below are the simulation results (waveforms) from Modelsim: 
+
+![2-to-4 Decoder Simulation Results](decoder_2_4_wave.png)
