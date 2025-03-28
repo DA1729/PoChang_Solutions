@@ -14,19 +14,18 @@ integer i;
 
 initial begin
     
-    // Test all cases with en_test = 0
+
     en_test = 0;
+    
     for (i = 0; i < 16; i = i + 1) begin
         a_test = i[3:0];
         #200;
     end
 
-    // Delay before changing en_test
-    #10;   // even a small delay works
-
-    // Test all cases with en_test = 1
+    #10;
     en_test = 1;
     #10;
+
     for (i = 0; i < 16; i = i + 1) begin
         a_test = i[3:0];
         #200;
