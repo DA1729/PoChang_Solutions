@@ -32,15 +32,8 @@
 
 I am not making the block diagram like the ones before (maybe i'll add a handrawn sometime in the future).
 
-But here is the logic: 
-
-* Use four decoders (obv 2 to 4). 
-* First decoder's enable is "anded" with (~a[3]&~a[2]).
-* Second decoder's enable is "anded" with (~a[3]&a[2]).
-* Third decoder's enable is "anded" with (a[3]&~a[2]).
-* Fourth decoder's enable is "anded" with (a[3]&a[2]).
-
 ## Simulation Results
 
 Below are the simulation results (waveforms) from Modelsim: 
 
+![4-to-16 Decoder Simulation Results](decoder_4_16_wave.png)
