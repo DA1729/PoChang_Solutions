@@ -13,9 +13,9 @@ assign a2 = a[1:0];
 assign a3 = a[1:0];
 assign a4 = a[1:0];
 
-assign en1 = en&(~a[3]&~a[2]);
-assign en2 = en&(~a[3]&a[2]);
-assign en3 = en&(a[3]&~a[2]);
+assign en1 = en&((~a[3])&(~a[2]));
+assign en2 = en&((~a[3])&a[2]);
+assign en3 = en&(a[3]&(~a[2]));
 assign en4 = en&(a[3]&a[2]);
 
 decoder_2_4 decoder_2_4_1 (.a(a1), .en(en1), .y(y1));
