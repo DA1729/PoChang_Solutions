@@ -59,6 +59,7 @@ y = p0 | p1 | p2 | p3 | p4;
 ```
 ---
 
-## Wave Input and Output
+## Simulation Results
 
-![Wave Input and Output](wave_2bit.png)
+Below are the simulation results (waveforms) from Modelsim:
+![2-bits Greater Than Simulation Results](wave_2bit.png)

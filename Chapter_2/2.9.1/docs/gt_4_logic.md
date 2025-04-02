@@ -4,6 +4,7 @@
 
 ![Block Diagram](gt_4_block.drawio.png)
 
-## Waveform Input and Output
+## Simulation Results
 
-![Wave Output](gt4_wave.png)
+Below are the simulation results (waveforms) from Modelsim:
+![4-bits Greater Than Simulation Results](gt4_wave.png)
