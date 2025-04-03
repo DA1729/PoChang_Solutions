@@ -21,6 +21,7 @@ Below is the waveform result of the circuit:
 
 ## Report for this Version-1
 
+The Utilization Report and the  Timing Report have been uploaded as a text file generated directly from Vivado, I have hidden a few details of my device and all. 
 
 
 ## Using Rotate-Right Circuit and Reversing Circuit
